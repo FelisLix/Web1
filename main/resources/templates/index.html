@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин акваріумних рибок</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/review.css">
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.0/dist/css/bootstrap.css}">
+</head>
+<body>
+
+
+<header>
+    <div class="logo">｡𖦹° Reef ｡𖦹°</div>
+    <div class="container text-center ">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <p><a th:href="@{/main}" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Головна</a></p>
+            </div>
+            <div class="col-md-auto">
+                <p><a th:href="@{/products}" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Магазин</a></p>
+            </div>
+            <div class="col-md-auto">
+                <p><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Про нас</a></p>
+            </div>
+            <div class="col-md-auto">
+                <p><a th:href="@{/contacts}" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Контакти</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <a href=""> 🛒 Кошик</a>
+    </div>
+</header>
+
+<section class="banner">
+    <h1 class="display-3">Ласкаво просимо в Reef</h1>
+    <a th:href="@{/products}" class="btn btn-outline-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+        Перейти до магазину
+    </a>
+</section>
+
+<section class="categories">
+    <h2>Популярні категорії</h2>
+    <div class="category-card">
+        <img src="/images/freshwater.jpg" alt="Прісноводні риби">
+        <p class="h4">Прісноводні риби</p>
+    </div>
+    <div class="category-card">
+        <img src="/images/saltwater.jpg" alt="Морська риба">
+        <p class="h4">Морська риба</p>
+    </div>
+    <div class="category-card">
+        <img src="/images/coral.jpg" alt="Корали">
+        <p class="h4">Корали</p>
+    </div>
+    <div class="category-card">
+        <img src="/images/plants.jpg" alt="Рослини">
+        <p class="h4">Рослини</p>
+    </div>
+</section>
+
+
+<section class="reviews">
+    <h1 class="display-6">Відгуки клієнтів</h1>
+    <div class="review">
+        <p> &#9733; &#9733; &#9733; &#9733; &#9733;</p>
+        <p>Чудовий сервіс! Доставили швидко!</p>
+        <p> — Іван, Київ </p>
+    </div>
+    <div class="review">
+        <p> &#9733; &#9733; &#9733; &#9733; &#9733;</p>
+        <p>Рибки здорові та активні. Дуже задоволена покупкою!</p>
+        <p> — Ольга, Харків</p>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2024 Reef. Усі права захищені.</p>
+    <p>Контакти: +380 123 456 789 | info@reef.com</p>
+</footer>
+</body>
+</html>
